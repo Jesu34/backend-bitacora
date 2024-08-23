@@ -1,4 +1,4 @@
-package js.bitacora.de.reportes.Entidades;
+package js.bitacora.de.reportes.Controladores.Entidades;
 
 import org.springframework.lang.NonNull;
 
@@ -10,33 +10,26 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "actividades")
+@Table
 
-public class Actividades {
+public class Materiales {
 
-    @Id
+     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     
+    @SuppressWarnings("null")
     @Column(name="nombre", nullable = false, length = 80)
     @NonNull
     private String nombre;
 
 
+    @SuppressWarnings("null")
     @Column(name="descripcion", nullable = false, length = 500)
     @NonNull
     private String descripcion;
 
-
-
-    
-
-    
-    
-
-
-   
     
 
     /**
